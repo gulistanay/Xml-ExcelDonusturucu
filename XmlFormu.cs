@@ -47,25 +47,10 @@ namespace FormXmlKullanimi
 
         private void buttonExcelKaydet_Click(object sender, EventArgs e)
         {
-            //SaveFileDialog sfd = new SaveFileDialog();
-            //sfd.Filter = "Excel Dosyası | *.xls; *.xlsx; *.xlsm";
-            //if (sfd.ShowDialog() == DialogResult.OK)
-            //{
-            //    try
-            //    {
-
-            //        //dt.WriteXml(sfd.FileName);
-            //        if (MessageBox.Show("Excel dosyası hazırlandı. Dosya açılsın mı?", "Onay", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            //            System.Diagnostics.Process.Start(sfd.FileName);
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show(ex.ToString());
-            //    }
-            //}
+           
             
             dataGridView1.RowHeadersVisible = false;
-            dataGridView1.ColumnHeadersVisible = true; //?? Çalışmıyo??  Başlıkları çekmiyor!!!
+            dataGridView1.ColumnHeadersVisible = true; 
 
             dataGridView1.Refresh();
 
@@ -90,32 +75,6 @@ namespace FormXmlKullanimi
 
             
 
-            //ExcelApp.Application excel = new ExcelApp.Application();
-
-            //excel.Visible = true;
-            //object Missing = Type.Missing;
-            //ExcelApp.Workbook excelBook = excel.Workbooks.Add(Missing);
-            //ExcelApp._Worksheet excelSheet = excelBook.Sheets[1];
-            //int StartCol = 1;
-            //int StartRow = 1;
-            //for (int j = 0; j<=dataGridView1.Columns.Count; j++)
-            //{
-            //    Range myRange = (Range)excelSheet.Cells[StartRow, StartCol + j];
-            //    myRange.Value2 = dataGridView1.Columns[j].HeaderText;
-            //}
-            //StartRow++;
-            //for (int i = 0; i<=dataGridView1.Rows.Count; i++)
-            //{
-            //    for (int j = 0; j<=dataGridView1.Columns.Count; j++)
-            //    {
-
-            //        Range myRange = (Range)excelSheet.Cells[StartRow + i, StartCol + j];
-            //        myRange.Value2 = dataGridView1[j, i].Value == null ? "" : dataGridView1[j, i].Value;
-            //        myRange.Select();
-
-
-            //    }
-            //}
         }
     }
 }
