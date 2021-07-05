@@ -76,7 +76,7 @@ namespace FormXmlKullanimi
            ds.Tables["IsDetay"].Rows.Add(row);
                //Dataset içindeki Isdetay tablosuna satırları ekliyoruz.
            }
-           ds.WriteXml(@"D:\\avturk\\Veri1.xml");
+           ds.WriteXml(@"D:\\Veri1.xml");
             //Verileri Dataset ile XML'e yazıyoruz.
 
         }
