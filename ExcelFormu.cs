@@ -144,96 +144,13 @@ namespace FormXmlKullanimi
             //    DataTable dt = GetDataTableFromDGV(dataGridView1);
             //    DataSet ds = new DataSet();
             //    ds.Tables.Add(dt);
-            //    ds.WriteXml(File.OpenWrite(@"D:\avturk\XMLDosyasi.xml"));
+            //    ds.WriteXml(File.OpenWrite(@"D:/XMLDosyasi.xml"));
             //}
             //catch (Exception ex)
             //{
             //    MessageBox.Show(ex.ToString());
             //}
-
-
-
-
-
-            //DataTable dt = new DataTable();
-            //for (int i = 1; i < dataGridView1.Columns.Count + 1; i++)
-            //{
-            //    DataColumn column = new DataColumn(dataGridView1.Columns[i - 1].HeaderText);
-            //    dt.Columns.Add(column);
-            //}
-            //int ColumnCount = dataGridView1.Columns.Count;
-            //foreach (DataGridViewRow dr in dataGridView1.Rows)
-            //{
-            //    DataRow dataRow = dt.NewRow();
-            //    for (int i = 0; i < ColumnCount; i++)
-            //    {
-            //        dataRow[i] = dr.Cells[i];
-            //    }
-            //}
-
-            //DataSet ds = new DataSet();
-            //ds.Tables.Add(dt);
-            //XmlTextWriter newXml = new XmlTextWriter("D:/avturk/newXML.xml", Encoding.UTF8);
-            //ds.WriteXml(newXml);
-
-
-            //const string FILENAME = @"D:\avturk\test.xml";
-            //XDocument doc = new XDocument(new XDeclaration("1.0", "ISO-8859-1", "yes"));
-            //XElement root = new XElement("root");
-            //XElement tbl = new XElement("table");
-            //List<XElement> entries = dataGridView1.Rows.Cast<DataGridViewRow>()
-            //.Select(row => new XElement("row", new XElement[]
-            //    {
-            //new XElement("one", row.Cells[0].Value.ToString()),
-            //new XElement("two", row.Cells[1].Value.ToString()),
-            //new XElement("child", new XElement("three", row.Cells[2].Value.ToString()))
-            //    }))
-            //    .ToList();
-            //tbl.Add(entries);
-            //root.Add(tbl);
-            //doc.Add(root);
-            //doc.Save(FILENAME);
-
-
-            //DataSet ds = new DataSet();
-            //ds.Tables.Add(dt);
-
-            ////Finally the save part:
-            //XmlTextWriter xmlSave = new XmlTextWriter(XML_Save_Path_Filename, Encoding.UTF8);
-            //xmlSave.Formatting = Formatting.Indented;
-            //ds.DataSetName = "Data";
-            //ds.WriteXml(xmlSave);
-            //xmlSave.Close();
-
-
-            //Cursor.Current = Cursors.WaitCursor;
-            //DataTable dt = (DataTable)grdcExcell.DataSource;
-            //SaveFileDialog sf = new SaveFileDialog();
-            //sf.Filter = "XML|*.xml";
-            //if (sf.ShowDialog() == DialogResult.OK)
-            //{
-            //    try
-            //    {
-            //        dt.WriteXml(sf.FileName);
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show($"HATA: {sf.FileName} kaydedilemedi.\nMESAJ: {ex.Message}");
-            //    }
-            //}
-
-
-
-            //DataSet ds = new DataSet("ProjeBilgileri");
-            //DataTable dt = new DataTable("IsDetay");
-            //dt.Columns.Add();
-            //ds.Tables.Add(dt);
-            //foreach (DataGridViewRow r in dataGridView1.Rows)
-            //{
-            //    DataRow row = ds.Tables["IsDetay"].NewRow();
-            //    ds.Tables["IsDetay"].Rows.Add(row);
-            //}
-            //ds.WriteXml(@"D:\\avturk\\ExcelDonusum.xml");
+   
 
 
 
